@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:label="InovaGAB"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InovaGAB"
+        android:usesCleartextTraffic="true">
+
+
+        
+        <activity android:name=".ui.ProfileActivity" />
+
+        <activity android:name=".ui.leader.StrategyFormActivity" />
+        <activity android:name=".ui.leader.ManageStrategiesActivity" />
+        <activity android:name=".ui.leader.DashboardActivity" />
+        <activity android:name=".ui.leader.LeaderHomeActivity" />
+
+        <activity android:name=".ui.manager.ProjectFormActivity" />
+        <activity android:name=".ui.manager.ProjectsActivity" />
+        <activity android:name=".ui.manager.ReviewIdeasActivity" />
+        <activity android:name=".ui.manager.ManagerHomeActivity" />
+
+        <activity android:name=".ui.operator.MyIdeasActivity" />
+        <activity android:name=".ui.operator.CreateIdeaActivity" />
+        <activity android:name=".ui.operator.OperatorHomeActivity" />
+
+        <activity android:name=".ui.auth.RegisterActivity" />
+        <activity android:name=".ui.auth.LoginActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
